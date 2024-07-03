@@ -1,0 +1,20 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - yarn
+  cache:
+    paths:
+      - node_modules/
+      
+test:
+  stage: test
+  dependencies:
+    - build
+  script:
+    - yarn test:all

@@ -2,16 +2,15 @@
   "name": "javascript-algo-practice",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "<k25650727@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
   "scripts": {
     "test": "jest",
     "test:pEuler": "jest --testPathPattern=src/projectEuler/",
     "test:all": "jest --testPathPattern=src/"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "jest": "^29.7.0"
   }
 }
+
