@@ -1,20 +1,11 @@
-image: node:latest
-
-stages:
-  - build
-  - test
-
-build:
-  stage: build
-  script:
-    - yarn
-  cache:
-    paths:
-      - node_modules/
-      
-test:
-  stage: test
-  dependencies:
-    - build
-  script:
-    - yarn test:all
+name: CICD
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: yarn
+    - name: Run tests
+      run: yarn test
