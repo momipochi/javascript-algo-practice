@@ -1,0 +1,17 @@
+{
+  "name": "javascript-algo-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:pEuler": "jest --testPathPattern=src/projectEuler/",
+    "test:all": "jest --testPathPattern=src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
