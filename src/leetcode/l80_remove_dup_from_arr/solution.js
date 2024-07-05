@@ -10,7 +10,6 @@ const solution = (nums = []) => {
       k++;
     }
   }
-
   return k;
 };
 
