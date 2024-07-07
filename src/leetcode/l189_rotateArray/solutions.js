@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/rotate-array/description/
+// https://leetcode.com/problems/rotate-array/?envType=study-plan-v2&envId=top-interview-150
 
 const solution = (nums = [], k) => {
   for (let i = 0; i < k; i++) {
