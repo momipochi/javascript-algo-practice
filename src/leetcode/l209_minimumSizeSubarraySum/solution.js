@@ -12,7 +12,6 @@ const solution = (target = 0, nums = []) => {
     }
     right++;
   }
-
   return min;
 };
 
